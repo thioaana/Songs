@@ -1,0 +1,7 @@
+black==23.1.0
+Django==3.2.17
+djangorestframework==3.14.0
+pylint==2.16.1
+pytest==7.2.1
+pytest-cov==4.0.0
+requests==2.25.1

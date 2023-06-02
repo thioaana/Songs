@@ -1,0 +1,16 @@
+<!-- songs/template/song_detail.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Song Detail{% endblock title %}
+
+{% block content %}
+    <h3>{{object.title}}</h3>
+    <p>Artist :{{object.artist}}</p>
+
+    <p>
+        <a href="{% url 'song_edit' object.pk %}">Edit</a> |
+        <a href="{% url 'song_delete' object.pk %}">Delete</a>
+        </p>
+    <p>Back to <a href="{% url 'song_list' %}">All Songs</a>.</p>
+{% endblock %}

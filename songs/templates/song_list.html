@@ -1,0 +1,13 @@
+<!-- songs/templates/song_list.html -->
+
+{% extends 'base.html' %}
+
+{% block title %} Songs {% endblock title %}
+
+{% block content %}
+
+    {% for song in object_list %}
+        <p><a href="{% url 'song_detail' song.pk%}"> {{ song.title }}</a> </p>
+    {% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,16 @@
+<!-- songs/templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block title %} Songs Home {% endblock title %}
+
+{% block content %} 
+    <br/>
+    <div class="jumbotron">
+        <h1 class="display-4">Songs app</h1>
+        <p class="lead">A Songs website built with Django.</p>
+        <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'song_list' %}" role="button">View All Songs</a>
+        </p>
+    </div>
+{% endblock content %}
